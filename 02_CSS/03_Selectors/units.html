@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                .parent{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            /* border: 1px solid black; */
+        }
+        /* % depend on parents */
+        .child{
+            height: 50%;
+            width: 50%;
+            background-color:red;
+        }
+        /* vh,vw depend on screen  */
+        /* .child{
+            height: 2vh;
+            width: 2vw;
+            background-color:red;
+        } */
+    
+    li{
+            /* rem root element size */
+            /* font-size: 2rem;  */
+            /* current parent size em  */
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+    
+        </div>
+    </div>
+
+    <!-- <ul> 16px
+        <li>1 32px
+            <ul>
+                <li>1.1 64px</li>
+                <ul>
+                    <li>1.1.1 128px</li>
+                </ul>
+                <li>1.2 64 px</li>
+            </ul>
+        </li>
+        <li>2 32px
+    
+        </li>
+        16px
+    </ul> -->
+    <ul>16px
+        <li>1  32px
+            <ul>
+                <li>1.1 64px
+                    <ul>
+                        <li>1.1.1 128px</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+</body>
+</html>
