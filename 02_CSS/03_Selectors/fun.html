@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        .cont1 {
+            position: absolute;
+            width: 40%;
+            height: 55%;
+            top: 20%;
+            left: 35%;
+            background-color: burlywood;
+            transition: 5s;
+        }
+
+        .cont2 {
+            position: absolute;
+            width: 40%;
+            height: 55%;
+            top: 20%;
+            left: 30%;
+            background-color: aquamarine;
+            transition: 5s;
+        }
+
+        .cont1:hover {
+            background-color: rgb(24, 197, 107);
+            rotate: 360deg;
+        }
+
+        .cont2:hover {
+            clip-path: polygon(50% 0%,
+                    61% 35%,
+                    98% 35%,
+                    68% 57%,
+                    79% 91%,
+                    50% 70%,
+                    21% 91%,
+                    32% 57%,
+                    2% 35%,
+                    39% 35%);
+            background-color: brown;
+            rotate: 600deg;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont1">
+        <div class="cont2">
+
+        </div>
+    </div>
+</body>
+
+</html>
