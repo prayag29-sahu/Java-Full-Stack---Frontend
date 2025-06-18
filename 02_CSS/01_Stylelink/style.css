@@ -1,0 +1,13 @@
+div {
+    margin: 40px;
+}
+
+section {
+    background-color: green;
+}
+
+section:hover {
+    border-radius: 50%;
+    transition: 2s;
+    background-color: aqua;
+}
