@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header-Navbar</title>
+    <style>
+        .navbar {
+            padding: 0.5rem 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(6px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul img {
+            height: 50px;
+            width: 100px;
+            border-radius: 10%;
+            filter: brightness(1) invert(1);
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #e05c69;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 8px 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #333;
+            color: #ffcc00;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <ul class="nav-links" id="nav-links">
+            <img src="book.avif" alt="Logo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="team.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </ul>
+    </header>
+</body>
+
+</html>
