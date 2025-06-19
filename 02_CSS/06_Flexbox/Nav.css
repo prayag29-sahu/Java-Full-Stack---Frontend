@@ -1,0 +1,44 @@
+body{
+    background-color: burlywood;
+}
+
+#parent {
+    height: 40px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
+    justify-content:space-between;
+    gap: 5%;
+}
+#anc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+a {
+    position: relative;
+    top: 10%;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+h2 {
+    position: relative;
+    bottom: 15px;
+    left: 2%;
+    color: rgb(242, 110, 22);
+}
+
+button {
+    position: relative;
+    right: 1%;
+    top: 15%;
+    background-color: rgb(242, 110, 22);
+    color: white;
+    height: 30px;
+    width: 2cm;
+    border-radius: 10%;
+}
