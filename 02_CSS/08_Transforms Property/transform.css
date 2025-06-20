@@ -1,0 +1,16 @@
+h2{
+    transition: 3s;
+}
+h2:hover{
+    /* transform: translate(300px); */
+    /* transform: translatex(300px); */
+    /* transform: translatey(300px); */
+    /* transform:translateZ(300px); */
+    /* transform: rotateX(360deg); */
+    /* transform: rotateY(360deg); */
+    /* transform: rotateZ(360deg); */
+    /* transform: scaleX(0); */
+    /* transform: scaleY(2); */
+    /* transform: scaleZ(2); */
+    /* transform:skew(10px); */
+}
