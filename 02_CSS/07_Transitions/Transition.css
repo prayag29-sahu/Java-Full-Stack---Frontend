@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(149, 249, 249);
+}
+
+#parent {
+    height: 600px;
+    border: 2px solid black;
+    background-color: burlywood;
+    width: 80vw;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#parent div {
+    width: 150px;
+    height: 150px;
+}
+.cl{
+    transition: 3s;
+}
+#parent:hover .cl{
+    margin-left:961px;
+    border-radius: 50%;
+    transform: rotate(150deg);
+}
+
+#one {
+    background-color: rgb(6, 248, 167);
+    transition-timing-function: ease-in;
+}
+
+#two {
+    background-color: rgb(254, 25, 71);
+    transition-timing-function: ease-out;
+}
+
+#three {
+    background-color: rgb(28, 12, 204);
+    transition-timing-function: ease-in-out;
+}
+#four {
+    background-color:yellow;
+    transition-timing-function:cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
