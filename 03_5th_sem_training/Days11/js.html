@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // console.log(this);
+        // console.log(window);
+        // a=5
+        // // console.log(this.a);
+        // // console.log(window.a);
+        // let obj = {
+        //     a:4,
+        //     name:"hello",
+        //     // sum:()=>{
+        //     //     console.log(this.a);
+        //     //     console.log(window.a);
+
+        //     // }
+        //     sum:function(){
+        //         console.log(this.a);
+        //         console.log(window.a);
+
+        //     }
+        // }
+        // console.log(this.obj);
+        // // console.log(window.obj.sum());
+
+
+        let todo = {
+            title: 'Buy groceries',
+            desc: function () {
+                return `You have to ${this.title}`;
+            }
+        };
+        // console.log(todo.title); // Buy groceries
+        // console.log(todo.desc()); // You have to Buy groceries
+        // console.log(todo.toString()); // [o bject Object]
+        // todo.__proto__ === Object.prototype
+        // console.log(todo.__proto__ === Object.prototype); // true
+        // console.log(Object.__proto__); // [object Object]
+
+        // console.log(Object.prototype); // [object Object]
+        // console.log(Object.prototype.constructor); // ƒ Object() { [native code] }
+        // console.log(Object.prototype.isPrototypeOf(todo)); // true
+
+        // console.log(Array.prototype);
+        // console.log(String.prototype);
+
+        let arr = [1, 2, 3, 4, 5]
+        Array.prototype.myMap = function (callback) {
+            let res = []
+            for (let i = 0; i < this.length; i++) {
+                res.push(callback(this[i], i, this))
+            }
+            return res
+        }
+        let data = arr.myMap((a, b, c) => { return c })
+        console.log(data);
+
+        for (let a of arr) {
+            console.log(a);
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
