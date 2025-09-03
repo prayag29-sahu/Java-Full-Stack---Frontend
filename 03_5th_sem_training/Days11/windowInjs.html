@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows in JS</title>
+
+</head>
+<body>
+    <script>
+        console.log(window);
+        let a =5 // let give undefine with window
+        var b=45 // var give actual with window
+        const c=4 // const also give undefine with window
+        let obj = {
+            name:"hello",
+            age:23
+        }   
+        console.log(window.obj); // undefine
+        console.log(window.a); // undefine
+        console.log(window.b); // 45
+        console.log(window.c); // undefine
+    </script>
+</body>
+</html>
