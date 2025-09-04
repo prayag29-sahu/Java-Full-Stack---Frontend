@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--  setTimeout and console.log not  a part of js its a part of browser web API   -->
+    <!-- js is synchronized but sometime follow Asynchronized -->
+    <!-- in webbrowser the stack and queue are present the  setTimeout and console.log which are the part of web API first come in queue and than move in stack follow their principles  -->
+    <script>
+        setTimeout(() => {
+            console.log("A");
+
+        }, 1000)
+        setTimeout(() => {
+            console.log("B");
+
+        }, 0)
+        setTimeout(() => {
+            console.log("C");
+
+        }, 3000)
+        console.log("D");
+        //  D B A C
+
+    </script>
+</body>
+
+</html>
