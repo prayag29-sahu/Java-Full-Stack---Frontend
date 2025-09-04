@@ -9,9 +9,8 @@ function timer(fun) {
         setTimeout(() => {
             console.log(i)
             if (i === 5) {
-                fun(); // Call fun after the last number is printed
-            }
-;
+                fun();
+            };
         }, i * 1000)
     }
 }
