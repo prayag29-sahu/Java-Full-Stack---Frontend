@@ -17,7 +17,5 @@ function one() {
 
 }
 
-// one()
-// console.log(username);
-
 one()
+// console.log(username);
