@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="click()">Click Me</button>
+    <input  type="text" placeholder="Enter Something">
+    <div class="text"></div>
+
+
+    <script>
+        let body = document.querySelector("body");
+        let btn = document.querySelector("button");
+        let textDiv = document.querySelector(".text");
+
+        // btn.onclick = function(){
+        //     alert("Button Clicked");
+        // }
+
+        btn.addEventListener("click", function () {
+            // alert("Button Clicked");
+            body.style.backgroundColor = "red";
+        });
+
+        let input = document.querySelector("input");
+        input.addEventListener("input", function (e) {
+            // console.log(e.target.value);
+            // textDiv.innerHTML = e.target.value;
+            // textDiv.innerHTML = `You Entered: ${e.target.value}`;
+            textDiv.innerHTML += `<h1>${e.target.value}</h1>`;
+        });
+
+
+    </script>
+</body>
+
+</html>
