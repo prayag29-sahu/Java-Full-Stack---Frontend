@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    
+        #insert {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .color {
+            margin-top: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+<div id="insert">
+    <p>Press any key to see its details.</p>
+</div>
+
+    <script>
+        const insert = document.getElementById('insert');
+
+        window.addEventListener('keydown', (e) => {
+            insert.innerHTML = `
+                <div class='color'>
+                <table>
+                <tr>
+                    <th>Key</th>
+                    <th>Keycode</th> 
+                    <th>Code</th>
+                </tr>
+                <tr>
+                    <td>${e.key === ' ' ? 'Space' : e.key}</td>
+                    <td>${e.keyCode}</td> 
+                    <td>${e.code}</td>
+                </tr>
+
+                </table>
+                </div>
+            `;
+        });
+    </script>
+</body>
+
+</html>
