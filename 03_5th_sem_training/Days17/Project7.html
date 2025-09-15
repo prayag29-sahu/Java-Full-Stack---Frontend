@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natural Homestay</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Outfit:wght@100..900&family=Tagesschrift&display=swap');
+    </style>
+    <style>
+        * {
+            font-family: 'Bricolage Grotesque', 'Tagesschrift', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial, sans-serif';
+            background-color: #fef7e5;
+            background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+            background-repeat: repeat;
+            min-height: 100vh;
+            color: #7B6754;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #3b3227;
+            background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+            color: #F4E1C1;
+        }
+
+        .navbar .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .nav-links a {
+            color: #F4E1C1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Cards Section */
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .card {
+            background-color: #97a596;
+            background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(59, 50, 39, 0.3);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            margin-top: 5rem;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #5C432F;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: #7B6754;
+            font-size: 1rem;
+        }
+
+        /* Main Content */
+        .container {
+            background-color: #d9c4a8;
+            background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(59, 50, 39, 0.2);
+            margin: 2rem auto;
+            max-width: 900px;
+            text-align: center;
+            margin-top: 8rem;
+        }
+
+        .btn-primary {
+            background-color: #D98C3F;
+            color: #F4E1C1;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #F4E1C1;
+            color: #3B3227;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #8b7765;
+            background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+            color: #F4E1C1;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Natural Homestay</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cards Section -->
+    <div class="cards-container">
+        <div class="card">
+            <h2>Home</h2>
+            <p>Experience eco-friendly living in the heart of nature with our cozy home setting.</p>
+        </div>
+
+        <div class="card">
+            <h2>Rooms</h2>
+            <p>Spacious and traditional wooden rooms with natural decor for a comfortable stay.</p>
+        </div>
+
+        <div class="card">
+            <h2>Gallery</h2>
+            <p>Explore our beautiful handcrafted wooden art and eco-friendly homestay environment.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Get in touch for bookings or inquiries about our natural and sustainable homestay services.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to Our Eco-Friendly Homestay</h1>
+        <p>Immerse yourself in nature with authentic wooden decor, traditional art, and sustainable comfort. Perfect for
+            adventurers seeking a peaceful retreat.</p>
+        <a href="#" class="btn-primary">Book Now</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Natural Homestay. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
