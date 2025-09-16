@@ -1,7 +1,7 @@
 function getUserData() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve({ username: "Chai", email: "chai@example.com" });
+            resolve({ username: "User", email: "user@example.com" });
         }, 1000);
     });
 }
