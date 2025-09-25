@@ -9,15 +9,24 @@ const Api = () => {
             console.log(data.recipes);
             SetData(data.recipes)
         })
-    })
+    }, []);
+
+    function handleDelete(item) {
+        console.log(item);
+        let newarray = apiData.filter((a, b) => {
+            return b !== item
+        })
+        SetData(newarray)
+    }
     return (
         <div>
-            {apiData.map((a) => {
+            {apiData.map((a, index) => {
                 return (
                     <>
                         <div id="card">
                             <img src={a.image} />
                             <p>{a.name}</p>
+                            <button onClick={() => handleDelete(index)}>Delete</button>
                         </div>
                     </>
                 )
