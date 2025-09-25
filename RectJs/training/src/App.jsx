@@ -5,14 +5,9 @@ import "./App.css"
 
 const App = () => {
   // let [count, SetCount] = useState(0)
-  // let [color, SetColor] = useState("red")
-  // let [state, SetState] = useState("Delhi")
   // useEffect(() => {
   //   console.log("hii");
   // }, [state]);
-
-
-
 
   return (
     <>
