@@ -6,13 +6,16 @@ padding: 0;
 #card{
         display: inline-block;
         gap: 20;
-        margin-bottom: 40px;
+        margin: 40px;
 }
 
 img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+
 }
 button{
     background: red;
+    border-radius: 20%;
 }
