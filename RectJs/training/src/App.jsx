@@ -10,20 +10,13 @@ const App = () => {
   //   console.log("hii");
   // }, [state]);
 
-  
 
-  
+
+
   return (
     <>
-    {/* <div>
-      <h1>{count}</h1>
-      <h1>{state}</h1>
-      <h1>{color}</h1>
-      <button onClick={()=>SetCount(count+1)}>click</button>
-      <button onClick={()=>SetColor("yellow")}>color</button>
-      </div> */}
       <API />
-      </>
+    </>
   )
 }
 
